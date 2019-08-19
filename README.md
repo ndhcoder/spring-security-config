@@ -6,7 +6,7 @@ Example Spring security config demo
 3. Run DemoApplication.java
 
 # Demo in POST MAN
-##1. Get token:
+##1. Get token:  
 
 * Link: http://localhost:8080/oauth/token
 * Authorization: Basic (Base64 of your "clientId:secret")
@@ -23,15 +23,18 @@ Authorization:
 
 
 Body:
+
 ![Alt text](demo/oauth_2.png?raw=true "Get Token")
 
 
 Click to Send, You will receive response:
+
 ![Alt text](demo/oauth_3.png?raw=true "Get Token")
 
 If you send with user __hieund4__ are block status, you will receive other response.
 
-##2. GET PROFILE
+##2. GET PROFILE  
+
 Now, we will using token above to get profile
 
 * Link: http://localhost:8080/users/profile
