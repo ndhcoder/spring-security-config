@@ -17,7 +17,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET, value = "/profile")
     public ResponseEntity getUserInfo() {
         UserDTO currentUser = getCurrentUser();
-        return new ResponseEntity<>(currentUser, HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(currentUser, HttpStatus.OK);
     }
 
     private UserDTO getCurrentUser() {
